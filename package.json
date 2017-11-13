@@ -1,0 +1,24 @@
+{
+  "name": "gregs-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoiseCodeWorks/fall-gregs-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoiseCodeWorks/fall-gregs-list/issues"
+  },
+  "homepage": "https://github.com/BoiseCodeWorks/fall-gregs-list#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
