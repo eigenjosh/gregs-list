@@ -13,24 +13,6 @@ server.use(bp.json())
 server.use(bp.urlencoded({ extended: true }))
 server.use(autoRoutes)
 
-// var autos = [{
-//     id: 'asdfkljsdafdsaflkj239023u9402u',
-//     make: 'Honda',
-//     model: 'Accord',
-//     year: 1987,
-//     color: 'Burgandy',
-//     price: 1800,
-//     mileage: 323200,
-//     condition: 'Like New',
-//     engineId: '3', //GOOD QUESTION
-//     description: 'Runs great with gas',
-//     location: 'Boise',
-//     contact: 'testcar@cars.auto',
-//     img: '//loremflickr.com/200/200/car',
-//     title: 'Your New Car'
-// }]
-
-
 server.listen(port, () => {
     console.log('Server is running on port, ', port)
 })
