@@ -1,6 +1,7 @@
 var express = require('express')
 var bp = require('body-parser')
 var dbConnect = require('./config/mlab/mlab-config')
+var autoRoutes = require('./server-assets/routes/auto-routes')
 
 var server = express()
 var port = 3000
@@ -10,6 +11,7 @@ var port = 3000
 server.use(express.static(__dirname + '/public'))
 server.use(bp.json())
 server.use(bp.urlencoded({ extended: true }))
+server.use(autoRoutes)
 
 // var autos = [{
 //     id: 'asdfkljsdafdsaflkj239023u9402u',
@@ -28,28 +30,6 @@ server.use(bp.urlencoded({ extended: true }))
 //     title: 'Your New Car'
 // }]
 
-// GETTERS AND SETTERS for our data
-// server.get('/api/autos', (req, res, next) => {
-//     res.send(autos)
-// })
-
-// server.get('/api/autos/:index', (req, res, next) => {
-//     res.send(autos[req.params.index])
-// })
-
-// server.post('/api/autos', (req, res, next) => {
-//     autos.push(req.body)
-//     res.send({ message: 'it worked, You just created a new auto listing' })
-// })
-
-// server.delete('/api/autos/:index', (req, res, next) => {
-//     if (autos[req.params.index]) {
-//         autos.splice(req.params.index, 1)
-//         res.send({ message: 'Successfully removed the auto listing' })
-//     } else {
-//         res.status(400).send({ error: 'Bad index provided' })
-//     }
-// })
 
 server.listen(port, () => {
     console.log('Server is running on port, ', port)

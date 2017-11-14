@@ -1,17 +1,6 @@
 var mongoose = require('mongoose')
 
 // WHAT IS AN AUTO
-
-
-
-
-// this.color = config.color.value
-// this.contact = config.contact.value
-// this.location = config.location.value
-// this.condition = config.condition.value
-// this.description = config.description.value
-// this.img = config.img.value
-// this.id = id++
 var schema = new mongoose.Schema({
     title: { type: String, required: true },
     make: { type: String },

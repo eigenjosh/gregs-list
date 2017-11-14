@@ -16,7 +16,7 @@ function AutosService() {
         { id: 5, fuel: 'Gas', cylinders: 10 },
         { id: 6, fuel: 'Diesel', cylinders: 12 },
     ]
-    var id = 0;
+    
     function Auto(config) {
         this.title = config.title.value
         this.make = config.make.value
@@ -30,7 +30,6 @@ function AutosService() {
         this.condition = config.condition.value
         this.description = config.description.value
         this.img = config.img.value
-        this.id = id++
     }
 
     function logError(err) {
